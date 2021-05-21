@@ -1,0 +1,39 @@
+.header{
+  /* background: rgb(128, 123, 123); */
+  height: 10em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.link-title .title{
+  font-size: 4em;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+/* Eliminar la undeline del elemento Link de React Router */
+a:-webkit-any-link{
+  text-decoration: none;
+  list-style: none;
+}
+
+.header .group-btn button{
+  display: inline-block;
+  padding: var(--padding-btn);
+  font-size: 1.2em;
+  margin: 0 0.5em;
+  border-radius: 3px;
+  background: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.header .group-btn button:hover{
+  background: var(--primary-color);
+  color: #fff;
+}

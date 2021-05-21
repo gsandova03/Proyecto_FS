@@ -1,0 +1,17 @@
+:root{
+  --primary-color: #b10012;
+  --secondary-color: #333333;
+  --padding-btn: 0.5em 1em;
+}
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 12px;
+}

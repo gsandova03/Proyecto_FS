@@ -1,0 +1,27 @@
+.Navbar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-list-items{
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.nav-item{
+  display: inline-block;
+  align-self: center;
+  text-align: center;
+  font-size: 1.3em;
+  color: var(--secondary-color);
+  padding: 1em 2.5em;
+  margin: 0em 1em;
+
+  transition: all 200ms ease;
+}
+
+.nav-item:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+}

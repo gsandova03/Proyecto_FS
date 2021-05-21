@@ -1,0 +1,21 @@
+.container_form{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+
+.login_form {
+  background-color: cornsilk;
+  width: 25rem;
+  height: 25rem;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login_form .input_container{
+  width: 100%;
+}
