@@ -11,6 +11,7 @@ export default function Navbar(){
         <a href='#' className='nav-item'>Judicial</a>
         <a href='#' className='nav-item'>Economia</a>
         <a href='#' className='nav-item'>Entretenimiento</a>
+        <a href='#' className='nav-item'>Barranquilla</a>
       </div>
     </div>
   )
