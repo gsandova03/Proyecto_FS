@@ -1,21 +1,78 @@
-.container_form{
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  margin: 10% auto;
-}
 
-.login_form {
-  background-color: cornsilk;
-  width: 25rem;
-  height: 25rem;
-  padding: 3rem 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.login_form .input_container{
+.page{
+  background: #333;
+  height: 100vh;
   width: 100%;
+  padding-top: 5%;
+  /* background: url('https://cloudfront-us-east-1.images.arcpublishing.com/semana/BLWNHALHMJAMJA23OMQ6UUCRRY.jpg'); */
+  background: url('https://www.semana.com/resizer/sdDFsf0UxIfrxuM99LoV6yDQuz4=/1200x675/filters:format(jpg):quality(70)//cloudfront-us-east-1.images.arcpublishing.com/semana/KUDFKMMXYNEH3L3S2FE2ZEGW4Q.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container_form{
+  margin-top: 0%;
+  margin-left: 40%;
+  width: 25rem;
+  height: auto;
+  background: hsla(0, 0%, 100%, 0.507);
+  padding: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
+  opacity: 1;
+}
+
+.container_form h3{
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.container_form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  margin: 1.5em 0;
+}
+
+.container_form form label {
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.container_form form div {
+  margin: 0;
+  padding: 0.5em;
+}
+
+.container_form form div button,
+.container_form form div input {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  background: none;
+  outline: 0;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.container_form form div button {
+  background: var(--primary-color);
+  border: 0;
+  color: #fff;
+  padding: var(--padding-btn);
+  transition: all 200ms ease;
+}
+
+.container_form form button:hover,
+.container_form form button:focus {
+  background: #d63031;
+  color: #fff;
+  outline: 0;
+}
+
+.container_form form div p{
+  padding: 1em;
+  font-size: 1rem;
 }

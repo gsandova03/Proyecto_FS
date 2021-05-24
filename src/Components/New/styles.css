@@ -1,0 +1,32 @@
+.new{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.new > *:not(img){
+  padding: 0.5rem;
+}
+
+.new img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.new a{
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 800;
+}
+.new a:hover{
+  text-decoration: underline;
+}
+
+.new .date{
+  margin-top: 1em;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 400;
+}

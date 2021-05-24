@@ -1,0 +1,32 @@
+.detail_new{
+  display: flex;
+  flex-direction: column;
+}
+
+.detail_new div:nth-child(1){
+  padding: 3rem 2rem;
+}
+
+.detail_new div:nth-child(2){
+  padding: 0 8rem;
+}
+
+.detail_new div:nth-child(3){
+  padding: 3rem 8rem;
+  font-size: 1.2rem;
+}
+
+.detail_new .new_title{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.detail_new img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.detail_new p{
+  line-height: 2rem;
+}
