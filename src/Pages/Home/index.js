@@ -6,7 +6,10 @@ import News from 'Components/News/News'
 import './styles.css'
 
 
+
+
 export default function Home(){
+
   return(
     <>
       <Header/>

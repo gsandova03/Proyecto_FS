@@ -1,15 +1,23 @@
 import New from 'Components/New/index'
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './styles.css'
-import {NEWS} from '../../Services/noticias'
 
 export default function News(){
+
+  const [noticia, setNoticia] = useState([])
+
+  useEffect(()=>{
+    fetch('http://127.0.0.1:4000/')
+      .then(res => res.json()
+      .then(data => setNoticia(data)))
+  }, [])
+
   return(
     <div className='content_news'>
       {
-        NEWS.map( data => (
+        noticia.map( data => (
           <div className='container_news'>
-            <New titulo={data.titulo} imagen={data.imagen} descripcion={data.descripcion} date={data.date} />
+            <New key={data.id} titulo={data.nombre} imagen={data.imagen} descripcion={data.descripcion} date={data.fecha_creacion} />
           </div>
         ))
       }

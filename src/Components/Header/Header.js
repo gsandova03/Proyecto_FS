@@ -14,7 +14,7 @@ export default function Header(){
         <Link to={`/login`}>
           <button>Login</button>
         </Link>
-        <Link to={`/registro`}>
+        <Link to={`/registro_usuario`}>
           <button>Registro</button>
         </Link>
       </div>

@@ -12,11 +12,7 @@ export default function Login(){
           <form action="">
               <div>
                   <label>Usuario</label>
-                  <input type="text" name="fullname"/>
-              </div>
-              <div>
-                  <label>Email Adress</label>
-                  <input type="email" name="email"/>
+                  <input type="text" name="name"/>
               </div>
               <div>
                 <label>Contraseña:</label> 
@@ -26,7 +22,7 @@ export default function Login(){
                   <button>Iniciar</button>
               </div>
               <div>
-                <p>No tienes cuenta? <Link to="/registro">Registrate!</Link> </p>
+                <p>No tienes cuenta? <Link to="/registro_usuario">Registrate!</Link> </p>
               </div>
           </form>
       </div>
