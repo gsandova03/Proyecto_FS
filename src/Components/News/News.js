@@ -15,9 +15,9 @@ export default function News(){
   return(
     <div className='content_news'>
       {
-        noticia.map( data => (
+        noticia.map( (data) => (
           <div className='container_news'>
-            <New key={data.id} titulo={data.nombre} imagen={data.imagen} descripcion={data.descripcion} date={data.fecha_creacion} />
+            <New key={data.id} id={data.id} titulo={data.nombre} imagen={data.imagen} descripcion={data.descripcion} date={data.fecha_creacion} />
           </div>
         ))
       }
