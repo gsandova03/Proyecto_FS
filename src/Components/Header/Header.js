@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom'
 import './styles.css'
 
 export default function Header(){
+
+  const token = localStorage.getItem("token");
+
+  const handleLogout = () =>{
+    localStorage.removeItem("token")
+  }
+
   return(
     <div className='header'>
       <div>
@@ -11,12 +18,24 @@ export default function Header(){
         </Link>
       </div>
       <div className='group-btn'>
-        <Link to={`/login`}>
-          <button>Login</button>
-        </Link>
-        <Link to={`/registro_usuario`}>
-          <button>Registro</button>
-        </Link>
+        {token && token != "" && token != undefined
+          ?(
+            <>
+              <Link to={`/editar_noticias`}>
+                <button>Editar Noticias</button>
+              </Link>
+              <Link to={`/login`} onClick={handleLogout}>
+                <button>Logout</button>
+              </Link>
+            </>
+          )
+          :(
+            <Link to={`/login`}>
+              <button>Login</button>
+            </Link>
+          )
+        
+        }
       </div>
     </div>
   )

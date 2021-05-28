@@ -1,8 +1,19 @@
+import React , { useState } from "react";
 import { Link } from "react-router-dom";
 
 
 export default function Register(){
 
+  const [nombre, setNombre] = useState("")
+  const [usuario, setUsuario] = useState("")
+  const [correo, setCorreo] = useState("")
+  const [telefono, setTelefono] = useState("")
+  const [password, setPasword] = useState("")
+
+  const handleChange = async e =>{
+    await setUsuario(e.target.name)
+    console.log(usuario)
+  }
 
   return(
     <div className='page'>
@@ -11,23 +22,23 @@ export default function Register(){
           <form method='POST' >
               <div>
                   <label>Nombre Completo</label>
-                  <input type="text" name="fullname"/>
+                  <input type="text" name="nombre" onChange={handleChange}/>
               </div>
               <div>
                   <label>Usuario</label>
-                  <input type="text" name="user"/>
+                  <input type="text" name="usuario" onChange={handleChange}/>
               </div>
               <div>
                   <label>Email Adress</label>
-                  <input type="email" name="email"/>
+                  <input type="email" name="correo" onChange={handleChange}/>
               </div>
               <div>
                 <label>Telefono</label> 
-                  <input type='text' />
+                  <input type='text' name="telefono" onChange={handleChange} />
               </div>
               <div>
                 <label>Contraseña</label> 
-                  <input type='password' />
+                  <input type='password' name="password" onChange={handleChange} />
               </div>
               <div>
                   <button>Registrar</button>

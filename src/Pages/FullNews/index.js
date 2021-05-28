@@ -19,8 +19,6 @@ export default function FullNew(){
       .then(data => setDetalleNoticia(data)))
   }, [])
 
-  console.log(detalleNoticia)
-
   return(
     <>
       <Header/>
@@ -32,21 +30,6 @@ export default function FullNew(){
           ))
         }
       </div>
-      {/* <Header/>
-      <Navbar/>
-      <div className='content'>
-        <div className='detail_new'>
-          <div>
-            <h1 className='new_title'>{noticia.titulo}</h1>
-          </div>
-          <div>
-            <img src={noticia.imagen}/>
-          </div>
-          <div>
-            <p className='paragraph_new'>{noticia.descripcion}</p>
-          </div>
-        </div>
-      </div> */}
     </>
   )
 }
