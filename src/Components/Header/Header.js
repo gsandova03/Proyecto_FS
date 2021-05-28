@@ -6,6 +6,12 @@ export default function Header(){
 
   const token = localStorage.getItem("token");
 
+  /*
+
+    Por medio del token almacenado en el localStorage verificamos si el usuario esta logeado, depediedno del estado se renderizan los botones de acceso a las noticias
+
+  */
+
   const handleLogout = () =>{
     localStorage.removeItem("token")
   }

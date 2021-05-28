@@ -8,6 +8,12 @@ export default function EditNews(){
 
   const {newsList} = useSelector((state) => state)
 
+  /*
+
+    Se hace uso de un hook de react-redux para acceder al objeto del estado global, para asi despues recorrerlo e imprimir sus valores en el componente
+
+  */
+
   return(
     <div className="editar_news">
       <div class="container mt-5">

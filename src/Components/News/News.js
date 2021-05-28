@@ -11,6 +11,13 @@ export default function News(){
   const dispatch = useDispatch();
   const {newsList} = useSelector( state => state )
 
+  /*
+
+    Se utiliza el hook de react useEffect, para cuando se renderiza el componente este haga el llamado a la API y extraer los datos, para despues almacenarlos en nuestro estado global por medio del hook useDispatch, el cual se encarga actualizar los datos de nuestro estado global 
+
+  */
+
+
   useEffect(()=>{
     fetch('http://127.0.0.1:4000/')
       .then(res => res.json()

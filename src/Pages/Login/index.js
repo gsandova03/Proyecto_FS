@@ -12,6 +12,14 @@ export default function Login(){
 
   const history = useHistory()
 
+  /*
+
+    Funcion handleClick, se encarga de hacer el llamado a la API por medio del metodo POST
+    para verificar el usuario ingresado con la base de datos
+
+  */
+
+
   const handleClick = () => {
     const options = {
       method:'POST',
@@ -40,7 +48,7 @@ export default function Login(){
     <div className='page'>
       <div className='container_form'>
           <h3>Login</h3>
-          {token && token != "" && token!=undefined
+          {token && token !== "" && token!== undefined
           ?
           (
             "Estas logeado con este Token"+ token
