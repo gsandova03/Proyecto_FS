@@ -1,5 +1,5 @@
 import React , { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory} from 'react-router-dom'
 import './login.css'
 
 
@@ -10,6 +10,7 @@ export default function Login(){
 
   const token = localStorage.getItem("token");
 
+  const history = useHistory()
 
   const handleClick = () => {
     const options = {
@@ -31,6 +32,8 @@ export default function Login(){
         localStorage.setItem("token", data.acces_token)
       })
       .catch(error => console.log(error))
+
+    history.push("/")
   };
 
   return(
@@ -40,7 +43,7 @@ export default function Login(){
           {token && token != "" && token!=undefined
           ?
           (
-            "Hola mundo "+ token
+            "Estas logeado con este Token"+ token
           ) :(
               <form action="">
                   <div>
@@ -52,7 +55,7 @@ export default function Login(){
                       <input type='password' name="password" value={password} onChange={(e) =>{setPassword(e.target.value)}} />
                   </div>
                   <div>
-                      <button onClick={handleClick}>Iniciar</button>
+                    <button onClick={handleClick}>Iniciar</button>
                   </div>
                   <div>
                     <p>No tienes cuenta? <Link to="/registro_usuario">Registrate!</Link> </p>
