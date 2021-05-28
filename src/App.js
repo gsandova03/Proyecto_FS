@@ -13,6 +13,7 @@ import AgregarNoticia from 'Pages/RegistroNoticia';
 /*
 ------------------Colaboradores:
             Alejandro Cuello
+            Maria Maza
             Gabriel Sandoval
 */
 
